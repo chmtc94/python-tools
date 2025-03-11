@@ -14,7 +14,11 @@ def execute_python_file(filename:str):
             file = python_file.read()
             exec(file)
     except Exception as err:           
+<<<<<<< HEAD
         print(f"Erreur exécution script python: {filename} \n {err=}\n {type(err)=}")
+=======
+        print(f"Erreur exécution script python: {filename} \nErrType: {type(err)}\n{str(err)}")
+>>>>>>> 0f10af1 (Update Execute Python Script 1.1)
 
 if __name__ == '__main__':
     filename = select_python_file()
